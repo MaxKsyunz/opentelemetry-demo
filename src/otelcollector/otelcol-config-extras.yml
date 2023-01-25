@@ -2,10 +2,10 @@
 # do not delete this file
 exporters:
   elasticsearch/trace:
-    endpoints: [http://elasticsearch:9200]
+    endpoints: [http://opensearch:9200]
     traces_index: trace_index
   elasticsearch/log:
-    endpoints: [http://elasticsearch:9200]
+    endpoints: [http://opensearch:9200]
     logs_index: my_log_index
 service:
   pipelines:

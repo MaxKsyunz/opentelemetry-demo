@@ -33,3 +33,6 @@ service:
       receivers: [otlp]
       processors: [batch]
       exporters: [prometheus, logging]
+  telemetry:
+    logs:
+      level: "debug"
